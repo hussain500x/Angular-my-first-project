@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 list-group mt-2">
+    <a href="#" class="list-group-item" *ngFor="let recipe of recipes">
+      <div class="float-start">
+        <h4>{{recipe.name}}</h4>
+        <p>{{recipe.descriotion}}</p>
+      </div>
+      <div class="float-end">
+        <span>
+          <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" [src]="recipe.imagePath" class="image-responsive"
+            style="max-height: 50px;">
+        </span>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 list-group mt-2">
+    <a href="#" class="list-group-item" *ngFor="let recipe of recipes">
+      <div class="float-start">
+        <h4>{{recipe.name}}</h4>
+        <p>{{recipe.descriotion}}</p>
+      </div>
+      <div class="float-end">
+        <span>
+          <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" [src]="recipe.imagePath" class="image-responsive"
+            style="max-height: 50px;">
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <app-recipes-item></app-recipes-item>
+</div>
